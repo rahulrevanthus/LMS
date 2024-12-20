@@ -1,0 +1,117 @@
+/* CardsDetails.css */
+
+.details-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background: linear-gradient(135deg, #ffffff 0%, #e0e5ec 100%); */
+    padding: 40px;
+    box-sizing: border-box;
+  }
+  
+  .details-card {
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+    width: 100%;
+    background-color: #ffff;
+    border-radius: 15px;
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .details-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 18px 50px rgba(0, 0, 0, 0.15);
+  }
+  
+  .details-image {
+    width: 100%;
+    height: 350px;
+    object-fit: fill;
+    border-bottom: 3px solid #FF7426;
+  }
+  
+  .details-content {
+    padding: 30px;
+    /* text-align: center; */
+  }
+  
+  .details-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    text-transform: capitalize;
+  }
+  
+  .details-price {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #FF7426;
+    margin: 15px 0;
+  }
+  
+  .details-price span {
+    font-weight: bold;
+    font-size: 1.8rem;
+  }
+  
+  .details-index {
+    font-size: 1.2rem;
+    color: #8a8a8a;
+    margin-bottom: 25px;
+  }
+  
+  .details-description {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    padding: 0 20px;
+  }
+  
+  .details-back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #FF7426;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition:  0.3s, transform 0.3s;
+    text-transform: uppercase;
+  }
+  
+  .details-back-button:hover {
+    background-color: #ff5900;
+    transform: translateY(-5px);
+  }
+  
+  .details-back-button:focus {
+    outline: none;
+  }
+  
+  @media (max-width: 768px) {
+    .details-card {
+      max-width: 90%;
+    }
+  
+    .details-title {
+      font-size: 1.6rem;
+    }
+  
+    .details-price {
+      font-size: 1.4rem;
+    }
+  
+    .details-index {
+      font-size: 1rem;
+    }
+  }
+  
